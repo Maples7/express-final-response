@@ -1,7 +1,7 @@
 [
   {"statusCode": 200, "successful": true, "code": 0, "status": "success", "desc": "Request Successful!"},
   {"statusCode": 200, "successful": false, "code": 1, "status": "failure", "desc": "Request Failed!"},
-  {"statusCode": 200, "successful": false, "code": 2, "status": "error", "desc": "Request Error!"},
+  {"statusCode": 500, "successful": false, "code": 2, "status": "error", "desc": "Request Error!"},
   {"statusCode": 200, "successful": false, "code": 3, "status": "remoteServiceError", "desc": "Request Remote Service Error!"},
   {"statusCode": 400, "successful": false, "code": 4, "status": "badResquest", "desc": "Bad Request!"},
   {"statusCode": 400, "successful": false, "code": 5, "status": "paramError", "desc": "Param Error!"},
