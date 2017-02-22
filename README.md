@@ -1,4 +1,6 @@
 # express-final-response
+[![Build Status](https://travis-ci.org/Maples7/express-final-response.svg?branch=master)](https://travis-ci.org/Maples7/express-final-response)
+[![Coverage Status](https://coveralls.io/repos/github/Maples7/express-final-response/badge.svg?branch=master)](https://coveralls.io/github/Maples7/express-final-response?branch=master)       
 The very last middleware of Express to handle every response of every request.
 
 ## Features
