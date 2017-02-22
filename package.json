@@ -1,0 +1,49 @@
+{
+  "name": "express-final-response",
+  "description": "The very last middleware of Express to handle every response of every request.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava",
+    "lint": "eslint lib",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+  },
+  "nyc": {
+    "exclude": [
+      "controllers/*.js",
+      "test.js"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "coveralls": "^2.11.16",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "express": "^4.14.1",
+    "express-mount-routes": "^0.0.5",
+    "nyc": "^10.1.2",
+    "pug": "^2.0.0-beta11",
+    "supertest": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maples7/express-final-response.git"
+  },
+  "keywords": [
+    "expressjs",
+    "middleware",
+    "routes"
+  ],
+  "author": "Maples7 <maples7.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maples7/express-final-response/issues"
+  },
+  "homepage": "https://github.com/Maples7/express-final-response#readme"
+}
