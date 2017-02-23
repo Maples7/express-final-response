@@ -57,8 +57,8 @@ app.use(finalResp({
   // you are highly encouraged to customize yours for every distinct response, see ./lib/status.json to get the essentials: 
     // statusCode -> HTTP Response Code
     // successful -> Whether a successful response or not
-    // code -> Custom response code. It can be used by mobile client or front-ends to customize their own response to user. Also you'd better well classify them according to the type of response such as user module of your system or article module
-    // status -> this string is used to locate status in this package (it's better than using code because it's semantic), so make sure they are unique upon most occasions. Also, the previous status would be replaced by the latter one.
+    // code -> Custom response code. It can be used by mobile client or front-ends to customize their own response to user. Also you'd better well classify them according to the type of response such as user module of your system or article module and make every one unique.
+    // status -> this string is used to locate status in this package (it's better than using `code` because it's semantic), so make sure they are unique upon most occasions. Also, the previous status would be replaced by the latter one.
     // desc -> brief description
   customStatus = [],
 
