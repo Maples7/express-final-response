@@ -1,6 +1,9 @@
 # express-final-response
 [![Build Status](https://travis-ci.org/Maples7/express-final-response.svg?branch=master)](https://travis-ci.org/Maples7/express-final-response)
-[![Coverage Status](https://coveralls.io/repos/github/Maples7/express-final-response/badge.svg?branch=master)](https://coveralls.io/github/Maples7/express-final-response?branch=master)       
+[![Coverage Status](https://coveralls.io/repos/github/Maples7/express-final-response/badge.svg?branch=master)](https://coveralls.io/github/Maples7/express-final-response?branch=master)
+[![npm version](https://badge.fury.io/js/express-final-response.svg)](https://badge.fury.io/js/express-final-response)           
+[![NPM](https://nodei.co/npm/express-final-response.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/express-final-response/)
+[![NPM](https://nodei.co/npm-dl/express-final-response.png?months=6&height=3)](https://nodei.co/npm/express-final-response/)       
 The very last middleware of Express to handle every response of every request.
 
 ## Features
