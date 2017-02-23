@@ -113,7 +113,7 @@ Response object would contain `statusCode`, `successful`, `code`, `status`, `des
 
 If response is normal data, do it like this:
 ```js
-// the most orrdinary way, `ext` is optional. `msg` here is designed for holding real data you want to return to clients or front-ends.
+// the most ordinary way, `ext` is optional. `msg` here is designed for holding real data you want to return to clients or front-ends.
 next({status: 'success', msg: 'test 1 success'});
 
 // the view would be applied so an HTML page would be returned. If there is no view param, a JSON would be returned like above, and the infomation in the returned JSON could be used while rendering view template.
