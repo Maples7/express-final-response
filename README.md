@@ -58,7 +58,7 @@ app.use(finalResp({
     // statusCode -> HTTP Response Code
     // successful -> Whether a successful response or not
     // code -> Custom response code. It can be used by mobile client or front-ends to customize their own response to user. Also you'd better well classify them according to the type of response such as user module of your system or article module and make every one unique.
-    // status -> this string is used to locate status in this package (it's better than using `code` because it's semantic), so make sure they are unique upon most occasions. That's to say, the previous status would be replaced by the latter one.
+    // status -> this string is used to locate status in this package (it's better than using `code` because it's semantic), so make sure they are unique upon most occasions. That's to say, the former status would be replaced by the latter one who keeps the same `status` string param.
     // desc -> brief description
   customStatus = [],
 
