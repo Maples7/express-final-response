@@ -52,15 +52,15 @@ app.listen(3000, function () {
 
 ### API
 ```js
-// right value of `=` is default value and all params are optional
+// right value of `=` is default value and all parameters are optional
 app.use(finalResp({
   // you are highly encouraged to customize yours for every distinct response, see ./lib/status.json to get the essentials: 
     // statusCode -> HTTP Response Code
     // successful -> Whether a successful response or not
-    // code -> Custom response code. It can be used by mobile client or front-ends to customize their own response to user. Also you'd better well classify them according to the type of response such as user module of your system or article module
-    // status -> this string is used to locate status in this package (it's better than using code because it's semantic), so make sure they are unique upon most occasions. Also, the previous status would be replaced by the latter one.
+    // code -> Custom response code. It can be used by mobile client or front-ends to customize their own response to user. Also you'd better well classify them according to the type of response such as user module of your system or article module and make every one unique.
+    // status -> this string is used to locate status in this package (it's better than using `code` because it's semantic), so make sure they are unique upon most occasions. That's to say, the former status would be replaced by the latter one who keeps the same `status` string param.
     // desc -> brief description
-  customStatus = [],
+  customStatuses = [],
 
   // response encoding
   encoding = 'utf-8',
@@ -85,9 +85,9 @@ app.use(finalResp({
 ```
 
 ### Response in each request
-Once you want to return result in each request, call `next()` with proper params.
+Once you want to return result in each request, call [Express `next()` function](http://expressjs.com/en/guide/error-handling.html) (Actually, we are making use of error handling mechanism of Express) with proper params.
 
-If response is an error, thare are several ways to do this:
+#### If response is an error, thare are several ways to do this:
 ```js
 // pass an Error and `error` status would be applied automatically.
 next(new Error('I am an Error')); 
@@ -111,7 +111,7 @@ Response object would contain `statusCode`, `successful`, `code`, `status`, `des
 }
 ```
 
-If response is normal data, do it like this:
+#### If response is normal data**, do it like this:
 ```js
 // the most ordinary way, `ext` is optional. `msg` here is designed for holding real data you want to return to clients or front-ends.
 next({status: 'success', msg: 'test 1 success'});
@@ -130,6 +130,10 @@ Response object would contain `statusCode`, `successful`, `code`, `status`, `des
   msg: 'test 1 success' 
 }
 ```
+
+#### See default statuses definition
+There are so many other defaut statuses you can choose besides `success` and `error`, make sure to see [./lib/status.json](lib/status.json) to catch them. Of course, you can define your own statuses for the benefit of `customStatus` parameter like what I have told you.
+ 
 
 You are welcomed to review _test.js_, _controllers_ dir and _views_ dir in this project for more infomation of usage.
 

@@ -1,7 +1,7 @@
 {
   "name": "express-final-response",
   "description": "The very last middleware of Express to handle every response of every request.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
