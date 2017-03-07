@@ -111,7 +111,7 @@ Response object would contain `statusCode`, `successful`, `code`, `status`, `des
 }
 ```
 
-#### If response is normal data**, do it like this:
+#### If response is normal data, do it like this:
 ```js
 // the most ordinary way, `ext` is optional. `msg` here is designed for holding real data you want to return to clients or front-ends.
 next({status: 'success', msg: 'test 1 success'});
