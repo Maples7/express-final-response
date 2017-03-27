@@ -1485,9 +1485,9 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-express-mount-routes@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/express-mount-routes/-/express-mount-routes-0.0.5.tgz#5d41b38cde5a421456ce5a35e331858024d94eaa"
+express-mount-routes@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/express-mount-routes/-/express-mount-routes-1.0.0.tgz#e62bb5c76fc19fe836a7647fc2699a09ba7201d7"
   dependencies:
     glob "^7.1.1"
     lodash "^4.17.4"
