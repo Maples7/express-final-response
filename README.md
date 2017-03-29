@@ -135,7 +135,7 @@ Response object would contain `statusCode`, `successful`, `code`, `status`, `des
 There are so many other defaut statuses you can choose besides `success` and `error`, make sure to see [./lib/status.json](lib/status.json) to catch them. Of course, you can define your own statuses for the benefit of `customStatus` parameter like what I have told you.
  
 
-You are welcomed to review _test.js_, _controllers_ dir and _views_ dir in this project for more infomation of usage.
+You are welcomed to review _test.js_, _controllers_ dir and _views_ dir in this project for more information of usage.
 
 ## LICENSE
 [MIT](LICENSE)
