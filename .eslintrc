@@ -12,6 +12,7 @@
     "max-len": [2, 120, 4],
     "comma-dangle": 0,
     "dot-notation": 0,
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "strict": 0
   }
 }
